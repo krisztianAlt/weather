@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Weather</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+        <!-- Import Montserrat font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- Nomalize.css fixes lot of differences between browsers default styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+        <link rel="stylesheet" type="text/css" href='style.css'>
+        <script type="text/javascript" src='weather.js' defer></script>
+        <script ></script>
+    </head>
+
+    <body>
+        <div>
+            <label for="townlist">Find your town</label>
+            <select class="selectpicker" name="townlist" id="townlist">
+                <option selected disabled>please, select here</option>
+                <option value="Budapest">Budapest</option>
+                <option value="New York">New York</option>
+                <option value="Timbuktu">Timbuktu</option>
+                <option value="Ouagadougou">Ouagadougou</option>
+                <option value="Firenze">Firenze</option>
+                <option value="Wellington">Wellington</option>
+            </select>            
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="bg-primary">
+                    <br>
+                    <tr>
+                        <th>Temperature</th>
+                        <th>Sky Conditions</th>
+                        <th>Humidity</th>
+                        <th>Wind</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="datas">
+                        <!-- here come the datas -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
